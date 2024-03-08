@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+:root {
+  --bg: url("../images/fond-5.jpg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: whitesmoke;
+  list-style-type: none;
+}
+
+.container {
+  position: absolute;
+  z-index: -1000;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.486)),
+    var(--bg) center/cover no-repeat;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+header {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.active-link {
+  border-bottom: 2px solid #f25e51;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin-inline-end: 3rem;
+}
+.menu-container {
+  margin-block-end: 2rem;
+}
+p {
+  width: 90%;
+  font-size: 0.9rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+}
+.btn {
+  width: 190px;
+  height: 55px;
+  margin-block: 0.5rem;
+  margin-inline-end: 1rem;
+  background: whitesmoke;
+  border: none;
+  border-radius: 5rem;
+  color: black;
+  font-weight: medium;
+}
+.btn:nth-child(2) {
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.555);
+}
+h1,
+h2,
+.specification {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h1 {
+  width: 30%;
+  font-size: 3.5rem;
+}
+.specification {
+  background: linear-gradient(to right, #ff9900, #f25e);
+  background-clip: text;
+  color: transparent;
+  font-size: 64px;
+  font-weight: bold;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-slide-container {
+  display: flex;
+}
+.slide-btn {
+  width: 50px;
+  height: 50px;
+  background: rgba(201, 200, 200, 0.507);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 100%;
+  margin-inline-end: 1rem;
+}
+.items {
+  /* transition: 0.5s; */
+  display: flex;
+}
+.sub-text {
+  /* transition: 0.5s; */
+  text-align: center;
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-inline-end: 0.8rem;
+  border-radius: 8px;
+}
+.image-active {
+  border: 8px solid whitesmoke;
+}
+.sub-text > p {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.678));
+  font-size: 12px;
+  border-radius: 8px;
+}
+.fi {
+  color: white;
+  width: 100%;
+}
+#first-item {
+  background: url("../images/fond-5.jpg") center/cover no-repeat;
+}
+#second-item {
+  background: url("../images/fond-4.jpg") center/cover no-repeat;
+}
+#third-item {
+  background: url("../images/fond-2.jpg") center/cover no-repeat;
+}
+#four-item {
+  background: url("../images/fond-3.jpg") center/cover no-repeat;
+}
